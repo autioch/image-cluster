@@ -1,0 +1,36 @@
+{
+  "name": "image-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src --fix --ext .js",
+    "lint:test": "eslint ./spec --fix --ext .js",
+    "test": "mocha --reporter=list spec/**/*.spec.js",
+    "test:watch": "mocha --reporter=min --watch spec/**/*.spec.js & exit 0"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autioch/image-cluster.git"
+  },
+  "author": "https://github.com/Autioch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Autioch/image-cluster/issues"
+  },
+  "homepage": "https://github.com/Autioch/image-cluster#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "image-size": "^0.6.2",
+    "lodash": "^4.17.10",
+    "looks-same": "^3.3.0",
+    "sharp": "^0.20.2"
+  },
+  "devDependencies": {
+    "chai": "4.0.2",
+    "eslint": "4.8.0",
+    "eslint-config-qb": "1.0.0",
+    "mocha": "3.4.2"
+  }
+}
